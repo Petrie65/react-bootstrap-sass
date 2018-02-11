@@ -1,0 +1,108 @@
+.App {
+  text-align: center; }
+
+.App-header {
+  background-color: #222;
+  height: 175px;
+  padding-top: 20px;
+  color: white; }
+
+.logo-image {
+  display: inline-block;
+  margin: auto; }
+  .logo-image #react {
+    height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    color: '#61dafb'; }
+  .logo-image #bootstrap {
+    height: 80px;
+    animation: App-logo-bounce infinite 2s ease-in-out; }
+  .logo-image #sass {
+    height: 80px;
+    animation: App-logo-rotate infinite 5s ease-in-out; }
+
+.jumbo-greeting {
+  padding: 5%; }
+
+.text-inco {
+  font-family: 'Inconsolata', serif; }
+
+.text-standard {
+  font-size: 16px; }
+
+.begin-button {
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  font-size: 28px;
+  z-index: 10;
+  height: 15%; }
+  .begin-button.show {
+    animation: tween-down 0.3s 1 ease-in-out forwards;
+    /*
+			animation-name: tween-down ;
+			animation-duration: 0.5s;
+			animation-iteration-count: 1;
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
+		 */ }
+
+.collapse-content {
+  padding: 5%; }
+  .collapse-content.show {
+    animation: show-buttons 0.3s 1 ease-in-out backwards; }
+
+.logo-text {
+  font-family: 'Inconsolata', serif;
+  font-size: 24px; }
+  .logo-text.blue {
+    color: #61dafb; }
+  .logo-text.purple {
+    color: #8a63c8; }
+  .logo-text.pink {
+    color: #ed70b0; }
+
+.bootstrap-content {
+  max-width: 400px;
+  margin: auto;
+  padding-top: 26px; }
+
+@keyframes show-buttons {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100; } }
+
+@keyframes tween-down {
+  0% {
+    bottom: 0%; }
+  100% {
+    bottom: -15%;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+    visibility: hidden; } }
+
+@keyframes App-logo-spin {
+  from {
+    transform: scale(1);
+    transform: rotate(0deg); }
+  to {
+    transform: scale(0.8);
+    transform: rotate(360deg); } }
+
+@keyframes App-logo-bounce {
+  0% {
+    transform: scale(0.8); }
+  45% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0.8); } }
+
+@keyframes App-logo-rotate {
+  0% {
+    transform: perspective(500) scaleZ(1) rotateY(20deg); }
+  50% {
+    transform: perspective(500) scaleZ(1) rotateY(-20deg); }
+  100% {
+    transform: perspective(500) scaleZ(1) rotateY(20deg); } }
